@@ -26,31 +26,31 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 1. Ejercicio 1
-#### Crear un identificador de nombre "ciudad" y asigne como valor el nombre de alguna ciudad
+#### Identificador de nombre "ciudad" y asigne como valor el nombre de alguna ciudad
 ```{r Ejercicio1}
-### Ejercicio 1: Ciudad donde vivo
+### Ejercicio 1:Ciudad
 ciudad <- "Loja"
 print(ciudad)
 ```
 
 
 2. Ejercicio 2: 
-#### Crear un identificador de nombre "pais_andes" y asigne como valor los nombres de los países por donde cruza la cordillera de Los Andes
+#### iIentificador de nombre "pais_andes" y asigne como valor los nombres de los países por donde cruza la cordillera de Los Andes
 
 ```{r Ejercicio2}
 ### Ejercicio 2: Datos país
 pais_andes <-  c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela")
 print(pais_andes)
-#### Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, lógico)
+#### 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, lógico)
 ```
 
 3. Ejercicio 3:  
 #### Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, lógico)
 
 ```{r Ejercicio3}
-### Ejercicio 3: En esta parte Escogí valores sobre Notas:finales de los diferentes estudiantes
-Notas_finales = data.frame(nombre = c("Juan", "Meliza", "Roldán", "Moises", "Pedro", "Lizeth", "Liliana", "Fernanda", "Mishell", "Rosa", "Gabriel", "Luis"), apellido = c("Castro", "Villa", "Roa", "Gualapuro", "Guitierrez", "Sánchez", "Montenegro", "Jiménez", "Toledo", "Alvarado", "Garcia", "Cerda"), numero = c("90", "80", "60", "70", "75", "90", "55", "65", "90", "80", "69", "78"), calificación = c("8", "9", "9", "7.5", "6", "9", "9", "8", "7", "8.5", "9", "10"), final = c("8", "9", "8", "9", "7.6", "7.8", "8.6", "8.8", "9", "8.7", "9.5", "10"))
-Notas_finales
+### Ejercicio 3: Lugares turisticos del Ecuador
+Lugares_Turisticos = data.frame(ciudad = c("Loja", "Ambato", "Cuenca", "Riobamba", "Saraguro", "Quito", "Guayaquil", "Macas", "Manabi", "Napo", "Guaranda", "Tena"), Costo = c("80", "20", "40", "30", "60", "49", "29", "59", "40", "29", "45", "87"), orden = c("2", "4", "7", "8", "9", "1", "5", "5", "22", "11", "13", "17"), numerodeplayas = c("2", "3", "5", "7", "8", "10", "23", "5", "23", "45", "14", "10"), calificaciondelcliente = c("10", "9", "8", "9", "7.6", "7.8", "8.6", "8.8", "9", "8.7", "9.5", "10"))
+Lugares_Turisticos
 ```
 
 4. Ejecicio 4: 
