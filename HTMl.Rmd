@@ -1,13 +1,20 @@
-#
-
 
 ---
 title: '"IntroduccionR"'
 author: "Silvana Morocho"
 date: "2/26/2022"
 output: html_document
----
 
+ fig_height: 5
+    fight_width: 7
+    theme: journal
+    highlight: espresso
+    toc: yes
+    toc_depht: 4
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -17,47 +24,51 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```
-#INTRODUCCION R#
 
-**Silvana Morocho**
-*GBI*
-
-Tarea de Bioinfomatica R
-
-1.Lista 1
-
-2.Lista 2
-
--Vineta 1
-
--Vineta 2
-
-
-
-```{rbloue1}
-
+1. Ejercicio 1
+#### Crear un identificador de nombre "ciudad" y asigne como valor el nombre de alguna ciudad
+```{r Ejercicio1}
+### Ejercicio 1: Ciudad donde vivo
+ciudad <- "Loja"
+print(ciudad)
 ```
 
 
+2. Ejercicio 2: 
+#### Crear un identificador de nombre "pais_andes" y asigne como valor los nombres de los países por donde cruza la cordillera de Los Andes
 
-
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+```{r Ejercicio2}
+### Ejercicio 2: Datos país
+pais_andes <-  c("Argentina", "Bolivia", "Chile", "Colombia", "Ecuador", "Perú", "Venezuela")
+print(pais_andes)
+#### Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, lógico)
 ```
 
-## Including Plots
+3. Ejercicio 3:  
+#### Crear un dataframe con 12 eventos (files) y 5 variables (columnas), cada columna debe tener diferentes tipos de datos (entero, decimal, caracter, lógico)
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r Ejercicio3}
+### Ejercicio 3: En esta parte Escogí valores sobre Notas:finales de los diferentes estudiantes
+Notas_finales = data.frame(nombre = c("Juan", "Meliza", "Roldán", "Moises", "Pedro", "Lizeth", "Liliana", "Fernanda", "Mishell", "Rosa", "Gabriel", "Luis"), apellido = c("Castro", "Villa", "Roa", "Gualapuro", "Guitierrez", "Sánchez", "Montenegro", "Jiménez", "Toledo", "Alvarado", "Garcia", "Cerda"), numero = c("90", "80", "60", "70", "75", "90", "55", "65", "90", "80", "69", "78"), calificación = c("8", "9", "9", "7.5", "6", "9", "9", "8", "7", "8.5", "9", "10"), final = c("8", "9", "8", "9", "7.6", "7.8", "8.6", "8.8", "9", "8.7", "9.5", "10"))
+Notas_finales
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+4. Ejecicio 4: 
+#### Cargue el dataset "DNase" e identifique su estructura. Extraiga (subset) los datos que cumplan con las condiciones de:
+######Ejecicio 4.1: "conc" (concentracion) entre 0.1 y 0.2
+
+```{r Ejercicio4.1.}
+### Ejercicio 4.1: Se seleccionó la dataset "DNase"
+?DNase
+print(head(DNase, 4))
+concentracion = subset(DNase, conc >= 0.1 & conc <= 0.2)
+print(concentracion)
+```
+###### Ejercicio 4.2: "Run" diferente a 2, "conc" mayor a 0.2 y "density" menor o igual a 1.0
+
+```{r Ejercicio4.2.}
+#Ejercicio 4.2: seleccionó la dataset "DNase"
+?DNase
+concentracion2 = subset(DNase, Run != 2 & conc > 0.2 & density <= 1.0)
+print(concentracion2)
+```
