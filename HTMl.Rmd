@@ -58,7 +58,7 @@ Lugares_Turisticos
 ######Ejecicio 4.1: "conc" (concentracion) entre 0.1 y 0.2
 
 ```{r Ejercicio4.1.}
-### Ejercicio 4.1: Se seleccionó la dataset "DNase"
+### Ejercicio 4.1: Dataset "DNase"
 ?DNase
 print(head(DNase, 4))
 concentracion = subset(DNase, conc >= 0.1 & conc <= 0.2)
@@ -67,7 +67,7 @@ print(concentracion)
 ###### Ejercicio 4.2: "Run" diferente a 2, "conc" mayor a 0.2 y "density" menor o igual a 1.0
 
 ```{r Ejercicio4.2.}
-#Ejercicio 4.2: seleccionó la dataset "DNase"
+#Ejercicio 4.2: Dataset "DNase"
 ?DNase
 concentracion2 = subset(DNase, Run != 2 & conc > 0.2 & density <= 1.0)
 print(concentracion2)
